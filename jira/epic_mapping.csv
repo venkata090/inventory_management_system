@@ -1,0 +1,33 @@
+﻿Issue Type,Summary,Suggested Epic,Priority,Labels
+Epic,Requirements and Project Planning,Requirements and Project Planning,High,epic-planning
+Epic,UI and System Design,UI and System Design,High,epic-design
+Epic,Database and Backend,Database and Backend,High,epic-backend
+Epic,Inventory Features,Inventory Features,High,epic-features
+Epic,Testing and Quality Assurance,Testing and Quality Assurance,High,epic-testing
+Epic,Documentation and Presentation,Documentation and Presentation,High,epic-documentation
+Story,"As an admin, I want to sign in securely",Database and Backend,High,auth
+Story,"As an admin, I want to register products",Inventory Features,High,products
+Story,"As an admin, I want to search and edit products",Inventory Features,High,products
+Story,"As an admin, I want to receive and issue stock",Inventory Features,Highest,stock
+Story,"As an admin, I want low-stock notifications",Inventory Features,High,alerts
+Story,"As an admin, I want inventory insights",Inventory Features,Medium,dashboard
+Story,"As an admin, I want an exportable inventory report",Inventory Features,Medium,reports
+Task,"Write problem statement, objective, and project scope",Requirements and Project Planning,High,planning
+Task,Create Jira project and Scrum board,Requirements and Project Planning,High,jira
+Task,Prepare sprint backlog and acceptance criteria,Requirements and Project Planning,High,jira
+Task,Sketch dashboard and product screen wireframes,UI and System Design,Medium,design
+Task,Create architecture and ER diagram,UI and System Design,High,design
+Task,Design SQLite tables,Database and Backend,High,database
+Task,Implement authentication endpoints,Database and Backend,High,auth
+Task,Implement product CRUD endpoints,Database and Backend,High,api
+Task,Implement atomic stock transaction endpoint,Database and Backend,Highest,api
+Task,Implement admin dashboard,Inventory Features,High,frontend
+Task,Implement products page,Inventory Features,High,frontend
+Task,Implement stock in/out interaction,Inventory Features,Highest,frontend
+Task,Implement movement history and CSV report,Inventory Features,Medium,reports
+Task,Prepare manual test cases,Testing and Quality Assurance,High,testing
+Task,Run unit and integration tests,Testing and Quality Assurance,High,testing
+Task,Fix bugs and verify regressions,Testing and Quality Assurance,High,testing
+Task,Write README and setup guide,Documentation and Presentation,Medium,documentation
+Task,Prepare project report and diagrams,Documentation and Presentation,Medium,documentation
+Task,Capture screenshots and prepare demo,Documentation and Presentation,High,presentation

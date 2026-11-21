@@ -1,0 +1,12 @@
+{
+  "name": "inventory-management-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Web-based Inventory Management System with Jira-ready Agile project plan",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "engines": { "node": ">=22.13.0" },
+  "license": "MIT"
+}

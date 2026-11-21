@@ -1,0 +1,33 @@
+﻿Issue Type,Summary,Description,Priority,Labels
+Epic,Requirements and Project Planning,Define scope and manage the project lifecycle in Jira.,High,epic-planning
+Epic,UI and System Design,"Design layouts, flows, architecture, and database schema.",High,epic-design
+Epic,Database and Backend,"Implement persistence, authentication, and inventory APIs.",High,epic-backend
+Epic,Inventory Features,"Build a usable product, stock, dashboard, and report workflow.",High,epic-features
+Epic,Testing and Quality Assurance,Verify expected behavior and log and resolve defects.,High,epic-testing
+Epic,Documentation and Presentation,Produce a clear technical report and demonstrate the software.,High,epic-documentation
+Story,"As an admin, I want to sign in securely",Acceptance: correct credentials grant access; incorrect credentials are rejected; sign-out ends the session.,High,auth
+Story,"As an admin, I want to register products","Acceptance: each product has a unique SKU, name, category, price, starting quantity and reorder threshold.",High,products
+Story,"As an admin, I want to search and edit products",Acceptance: search SKU or name; filter categories; edit product metadata; archive a product.,High,products
+Story,"As an admin, I want to receive and issue stock",Acceptance: IN adds stock and OUT subtracts it; negative stock is rejected; transaction is recorded.,Highest,stock
+Story,"As an admin, I want low-stock notifications","Acceptance: items at/below threshold are flagged, including zero-stock products.",High,alerts
+Story,"As an admin, I want inventory insights","Acceptance: dashboard shows SKU count, units, stock value, category counts, alerts, recent movements.",Medium,dashboard
+Story,"As an admin, I want an exportable inventory report",Acceptance: CSV export lists all active products with current stock and reorder thresholds.,Medium,reports
+Task,"Write problem statement, objective, and project scope",Define in-scope and out-of-scope modules.,High,planning
+Task,Create Jira project and Scrum board,Set team-managed Scrum project and issue workflow.,High,jira
+Task,Prepare sprint backlog and acceptance criteria,Prioritize user stories and tasks by sprint.,High,jira
+Task,Sketch dashboard and product screen wireframes,Create responsive UI layout and navigation plan.,Medium,design
+Task,Create architecture and ER diagram,Document client-server API and database table relationships.,High,design
+Task,Design SQLite tables,"Create users, products, and stock movements schema.",High,database
+Task,Implement authentication endpoints,"Create session login, current-user, and logout APIs.",High,auth
+Task,Implement product CRUD endpoints,"Validate and save product creation, edit, archive, list.",High,api
+Task,Implement atomic stock transaction endpoint,Persist stock balance updates and movement history together.,Highest,api
+Task,Implement admin dashboard,"Show KPI cards, category breakdown, activity, low-stock list.",High,frontend
+Task,Implement products page,"Build search, category filtering, and product forms.",High,frontend
+Task,Implement stock in/out interaction,Provide transaction form and validation feedback.,Highest,frontend
+Task,Implement movement history and CSV report,Render recent movements and export inventory data.,Medium,reports
+Task,Prepare manual test cases,Create acceptance and edge-case tests.,High,testing
+Task,Run unit and integration tests,"Verify invalid quantity, login, CRUD, and report download.",High,testing
+Task,Fix bugs and verify regressions,Record defects and retest after fixes.,High,testing
+Task,Write README and setup guide,"Add prerequisites, credentials, and execution commands.",Medium,documentation
+Task,Prepare project report and diagrams,"Include aim, requirements, architecture, results, and limitations.",Medium,documentation
+Task,Capture screenshots and prepare demo,Present working software together with Jira project board.,High,presentation

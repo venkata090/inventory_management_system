@@ -1,0 +1,32 @@
+INVENTORY MANAGEMENT SYSTEM — START HERE
+======================================
+
+1. Install Node.js version 22.13+ (prefer Node.js 24 LTS).
+2. Open the inventory_management_system folder in VS Code.
+3. Open a terminal in that folder.
+4. Type: node server.js
+5. Open: http://127.0.0.1:3000
+
+DEMO LOGIN
+Username: admin
+Password: Admin@123
+
+Use these demo credentials only on your own computer, not a public website.
+
+JIRA CONTENT
+- jira/backlog.csv: importable Issues (6 Epics, 7 Stories, 19 Tasks)
+- jira/epic_mapping.csv: suggested story/task parents
+- jira/JIRA_SETUP.md: how to import
+- jira/SPRINT_PLAN.md: 3-sprint Agile plan
+
+OTHER FILES
+- docs/PROJECT_REPORT.md: report draft
+- docs/SYSTEM_DESIGN.md: diagrams
+- docs/TEST_PLAN.md: manual test cases
+- docs/dashboard_preview.png: sample dashboard visual
+- docs/products_preview.png: sample product listing visual
+
+TESTS
+Run: npm test
+
+No npm install needed. If you have issues, read README.md.

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8fc">
+  <title>Stockwise — Inventory Management</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <div id="login-view" class="auth-layout hidden">
+    <div class="auth-brand">
+      <div class="brand-logo inverted"><span class="logo-mark">◈</span> stockwise<span class="brand-dot">.</span></div>
+      <div class="auth-brand-content">
+        <span class="eyebrow light">BUILT FOR BETTER STOCK CONTROL</span>
+        <h1>Every product.<br>Every movement.<br><em>One clear view.</em></h1>
+        <p>A smarter, simpler way to track inventory, stay organized, and make confident decisions.</p>
+        <div class="auth-feature"><span class="feature-dot">✓</span> Real-time inventory monitoring</div>
+        <div class="auth-feature"><span class="feature-dot">✓</span> Stock movement history</div>
+        <div class="auth-feature"><span class="feature-dot">✓</span> Instant low-stock alerts</div>
+      </div>
+      <p class="auth-footnote">Inventory Management System • College project demo</p>
+    </div>
+    <div class="auth-form-panel">
+      <div class="login-card">
+        <div class="mobile-auth-logo"><span class="logo-mark">◈</span> stockwise.</div>
+        <span class="eyebrow">WELCOME BACK</span>
+        <h2>Sign in to your workspace</h2>
+        <p class="muted">Access your inventory dashboard and manage products.</p>
+        <form id="login-form" class="stack-form">
+          <label>Username<input name="username" autocomplete="username" placeholder="Enter your username" value="admin" required></label>
+          <label>Password<input type="password" name="password" autocomplete="current-password" placeholder="Enter your password" required></label>
+          <p class="form-error" id="login-error" role="alert"></p>
+          <button class="btn primary full" type="submit">Sign in <span>→</span></button>
+        </form>
+        <div class="demo-credentials"><strong>Demo access</strong><span>Username: <code>admin</code></span><span>Password: <code>Admin@123</code></span></div>
+        <p class="login-note">Local demo only. Change the admin password before sharing or hosting.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="app-view" class="app-shell hidden">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand-logo" href="#overview"><span class="logo-mark">◈</span> stockwise<span class="brand-dot">.</span></a>
+      <div class="workspace-label">WORKSPACE</div>
+      <nav id="side-nav" class="side-nav">
+        <button class="nav-link active" data-page="overview"><span data-icon="grid"></span> Overview</button>
+        <button class="nav-link" data-page="products"><span data-icon="package"></span> Products</button>
+        <button class="nav-link" data-page="movements"><span data-icon="arrows"></span> Stock movements</button>
+        <button class="nav-link" data-page="reports"><span data-icon="chart"></span> Reports</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="sidebar-help"><span class="help-icon" data-icon="shield"></span><strong>You're in control.</strong><p>Your data is stored locally on your device.</p></div>
+        <button class="nav-link logout" id="logout-btn"><span data-icon="logout"></span> Log out</button>
+      </div>
+    </aside>
+    <div class="app-content">
+      <header class="topbar">
+        <div class="topbar-left"><button class="mobile-menu" id="menu-btn" aria-label="Toggle navigation"><span data-icon="menu"></span></button><span class="crumb">Workspace</span><span class="crumb-separator">/</span><strong id="topbar-title">Overview</strong></div>
+        <div class="topbar-right"><span class="topbar-date" id="current-date"></span><span class="header-divider"></span><div class="avatar">AD</div><div class="user-detail"><strong>Admin</strong><span>Administrator</span></div></div>
+      </header>
+      <main id="main-content" class="main-content" aria-live="polite"></main>
+      <footer class="app-footer">Stockwise Inventory Management System <span>•</span> Built for a software engineering project</footer>
+    </div>
+  </div>
+  <div id="modal-root"></div>
+  <div id="toast-root" class="toast-root" aria-live="polite"></div>
+</body>
+</html>
